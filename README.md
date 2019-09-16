@@ -6,7 +6,7 @@ a folder that is full of other git repos.
 
 ## Requirements
 
-Python 3.7+
+* [Python 3](https://www.python.org/)
 
 ## Folder Structure
 
