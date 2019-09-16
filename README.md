@@ -24,3 +24,17 @@ from, and will
 
 ## Usage
 
+```
+usage: This script will walk through all sub-directories, fetch all tags, and pull.
+       [-h] [-t TAG] [-d DIRECTORY] [-b BRANCH]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t TAG, --tag TAG     Checkout this branch or tag for each repo
+  -d DIRECTORY, --directory DIRECTORY
+                        The direcotry that holds all the repos you want to
+                        update. Default is current dir.
+  -b BRANCH, --branch BRANCH
+                        After pulling and checking out, create a new branch of
+                        this name for each repo
+```

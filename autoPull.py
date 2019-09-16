@@ -57,3 +57,5 @@ for currentDir in filter(os.path.isdir, os.listdir(rootDir)):
 
     # Go back to the original directory
     os.chdir(rootDir)
+
+print("-------- Update complete! --------")
