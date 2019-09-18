@@ -1,4 +1,4 @@
-# Auto Pull
+# `Auto Pull.py`
 
 This is a smiple python script that will pull and update the latest tags on 
 a folder that is full of other git repos.
@@ -38,3 +38,21 @@ optional arguments:
                         After pulling and checking out, create a new branch of
                         this name for each repo
 ```
+
+# `batchClone.py`
+***Note***: You need to install the requests module via pip for this to work: 
+```
+pip install requests
+```
+
+This is a simple script for cloning all repositiories in a given organization.
+
+**Note** For private repos, you will need to provide an oAuth access token.  
+To do this go to your GitHub account: 
+
+```
+Settings > Developer Settings > Personal Access Tokens
+```
+
+From here, you can generate a new oAuth token, make sure that you check the full
+`repo` scope. 
