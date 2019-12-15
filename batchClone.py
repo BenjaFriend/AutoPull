@@ -20,6 +20,8 @@ outDir = os.getcwd()
 orgName = args.org
 
 print("\n----- Batch cloning Config-----\n")
+print("\n----- WARNING: Work in progress, i dont know what I did with this -----\n")
+
 print("\tOrganization name: \t" + orgName)
 if(args.token):
     print("\tToken: \t", args.token)
@@ -47,7 +49,9 @@ jsonData = json.loads(binary)
 
 #print(jsonData)
 
+# for each repo...
 for repo in jsonData:
-    print(repo['full_name'])
-    
-#print(json_obj[0])
+    repoName = repo['full_name']
+    cloneURL = repo['clone_url']
+    print("Cloning " + repoName + " \t\tFROM\t\t " + cloneURL)
+    # os.system("git clone --quiet" + cloneURL)
