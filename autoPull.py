@@ -45,11 +45,12 @@ for currentDir in filter(os.path.isdir, os.listdir(rootDir)):
     os.system("git checkout --theirs .")
 
     # Update all tags and check one out if specified
-    os.system("git fetch --all --tags --prune -q")
+    os.system("git fetch --all --tags --prune -q")  
+    os.system("git pull --quiet")
+
     if args.tag:
         os.system("git checkout " + args.tag)
 
-    os.system("git pull --quiet")
     
     # Create a new branch if specified
     if args.branch:
